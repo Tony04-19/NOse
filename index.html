@@ -41,9 +41,12 @@
             color: white;
             text-align: center;
             padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            position: static;
+            margin-top: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -52,15 +55,28 @@
         <h1>Bienvenido a Mi Página Web</h1>
     </header>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Acerca de</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
     </nav>
-    <main>
-        <h2>Sobre Nosotros</h2>
-        <p>Esta es una página de ejemplo creada en HTML. Puedes personalizarla según tus necesidades.</p>
-        <p>Añade más contenido para que sea más interesante y útil para tus visitantes.</p>
+    <main class="container">
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido a nuestra página principal, donde encontrarás toda la información relevante.</p>
+        </section>
+        <section id="acerca">
+            <h2>Sobre Nosotros</h2>
+            <p>Esta es una página de ejemplo creada en HTML. Puedes personalizarla según tus necesidades.</p>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Ofrecemos una variedad de servicios para satisfacer tus necesidades.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Contáctanos para más información o para resolver tus dudas.</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
